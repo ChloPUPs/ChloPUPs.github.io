@@ -5,3 +5,15 @@ body{
     color: rgb(255, 255, 255);
     text-shadow: 5px 5px 20px black;
 }
+div{
+    margin: 30px;
+}
+a{
+    color: magenta;
+}
+a:hover{
+    color: rgb(255, 87, 255);
+}
+a:active{
+    color: rgb(255, 154, 255);
+}
