@@ -10,10 +10,11 @@ div{
 }
 a{
     color: magenta;
+    transition: 0.25s;
 }
 a:hover{
-    color: rgb(255, 87, 255);
+    color: rgb(255, 155, 255);
 }
 a:active{
-    color: rgb(255, 154, 255);
+    color: rgb(255, 105, 255);
 }
