@@ -6,14 +6,19 @@ const getAnswer = document.getElementById("answer");
 getSubmitNumbers.onclick = function(){
     let number1 = getNumber1.value;
     let number2 = getNumber2.value;
-    number1 = Number(number1);
-    number2 = Number(number2);
-    if(isNaN(number1) || isNaN(number2)){
-        console.log("a");
-        getAnswer.textContent = "That isn't a number";
+    if(number1 === "" || number2 === ""){
+        getAnswer.textContent = "You need to enter both numbers";
     }
     else{
-        let answer = number1 * number2;
-        getAnswer.textContent = answer;
+        number1 = Number(number1);
+        number2 = Number(number2);
+        if(isNaN(number1) || isNaN(number2)){
+            console.log("a");
+            getAnswer.textContent = "That isn't a number";
+        }
+        else{
+            let answer = number1 * number2;
+            getAnswer.textContent = answer;
+        }
     }
 }
